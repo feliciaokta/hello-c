@@ -19,3 +19,6 @@ int main () {
   }
 
 }
+
+// run this in terminal "clang temp.c -o temp"
+// this command will compile temp.c into a program called temp
