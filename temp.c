@@ -3,7 +3,7 @@
 // print Fahrenheit-Celsius table for fahr = 0, 20, ..., 300
 
 int main () {
-  int fahr, celsius;
+  int fahr, celsius;  // variable declaration
   int lower, upper, step;
 
   lower = 0;    // lower limit of temp table
@@ -22,3 +22,9 @@ int main () {
 
 // run this in terminal "clang temp.c -o temp"
 // this command will compile temp.c into a program called temp
+
+// data types in C:
+// char (single byte character)
+// short (short int)
+// long (long int)
+// double (int with 2 decimal points)
