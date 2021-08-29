@@ -35,3 +35,14 @@ int main () {
 // short (short int)
 // long (long int)
 // double (int with 2 decimal points)
+
+
+
+// same formula with a for loop
+
+// int main () {
+//   int fahr;
+
+//   for(fahr = 0; fahr <= 300; fahr = fahr + 20)
+//     printf("%3d%6.1f\n", fahr, (5.0 / 9.0)*(fahr - 32));
+// }
