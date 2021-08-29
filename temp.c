@@ -12,11 +12,14 @@ int main () {
 
   fahr = lower;
 
+  printf("Heading above table\n\n");
+
   while (fahr <= upper) {
     celsius = 5 * (fahr-32) / 9;
     printf("%d\t%d\n", fahr, celsius);   // the "/t" is for tab, some space in between the fahr and celsius numbers on the list
     // the first %d in the quotation mark is the first argument (fahr), respectively the second %d
     // d stands for digits, will print a specified amount of digits if you say %3d or %6d
+    // if you change d to f, the data type becomes float and it prints the decimal place. %3.0f means the front has 3 digits and the back has no decimal points. %6.1f means the front has 6 digits and the back has 1 decimal point.
     // the opposite of printf is scanf
     fahr += step;
   }
@@ -25,6 +28,7 @@ int main () {
 
 // run this in terminal "clang temp.c -o temp"
 // this command will compile temp.c into a program called temp
+// then to run the program, type ./temp
 
 // data types in C:
 // char (single byte character)
