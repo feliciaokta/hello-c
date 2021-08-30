@@ -52,6 +52,7 @@ int main () {
 // same formula but using #define ("symbolic constants")
 // the format goes --- #define NAME replacementText
 // any occurence of NAME will be replaced by replacementText
+// DO NOT put semicolon after a #define
 
 /*
 #include <stdio.h>
