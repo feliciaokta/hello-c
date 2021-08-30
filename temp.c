@@ -46,3 +46,25 @@ int main () {
 //   for(fahr = 0; fahr <= 300; fahr = fahr + 20)
 //     printf("%3d%6.1f\n", fahr, (5.0 / 9.0)*(fahr - 32));
 // }
+
+
+
+// same formula but using #define ("symbolic constants")
+// the format goes --- #define NAME replacementText
+// any occurence of NAME will be replaced by replacementText
+
+/*
+#include <stdio.h>
+
+#define LOWER 0
+#define UPPER 300
+#define STEP 20
+
+int main () {
+  int fahr;
+
+  for(fahr = LOWER; fahr <= UPPER; fahr = fahr + STEP)
+    printf("%3d%6.1f\n", fahr, (5.0 / 9.0)*(fahr - 32));
+}
+
+*/
