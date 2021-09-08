@@ -29,3 +29,7 @@ main() {
   while ((c = getchar()) != EOF)
     putchar(c);
 }
+
+// precedence of != is higher than =
+// so if you write c = getchar() != EOF, the executed will be c = (getchar() != EOF)
+// so pay attention to the brackets
