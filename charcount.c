@@ -12,3 +12,13 @@ int main ()
     ++nc;       // you can also write nc++;
   printf("%ld\n", nc);
 }
+
+// we can also write that using a for loop
+int main ()
+{
+  double nc;
+
+  for (nc = 0; getchar() != EOF; nc++)
+    ;                     // the body of the loop is empty
+  printf("%.0f\n", nc);   // percent dot zero f, means it prints zero decimal points
+}
