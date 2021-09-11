@@ -32,8 +32,8 @@ int main ()
 {
   int nc;
   int blanks = 0;
-  // int tabs = 0;
-  // int newlines = 0;
+  int tabs = 0;
+  int newlines = 0;
 
   while ((nc = getchar()) != EOF) {
 
@@ -41,20 +41,22 @@ int main ()
       blanks++;
     }
 
-    // if (nc == '\t') {
-    //   tabs++;
-    // }
+    if (nc == '\t') {
+      tabs++;
+    }
 
-    // if (nc == '\n') {
-    //   newlines++;
-    // }
+    if (nc == '\n') {
+      newlines++;
+    }
 
   }
 
-  printf("blanks: %d", blanks); // percent d is to tell the compiler to print an integer
+  printf("blanks: %d, tabs: %d, newlines: %d", blanks, tabs, newlines);
+  
+  // percent d is to tell the compiler to print an integer
 
   // input a series of text,
   // when you're done typing all the text,
-  // press ctrl + d
+  // press enter, then press ctrl + d
 
 }
