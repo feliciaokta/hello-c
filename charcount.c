@@ -30,16 +30,28 @@
 // write a program to count blanks, tabs, and newlines
 int main ()
 {
-  long nc;
+  int nc;
   int blanks = 0;
-  int tabs = 0;
-  int newlines = 0;
+  // int tabs = 0;
+  // int newlines = 0;
 
-  for (nc = 0; getchar() != EOF; nc++) {
+  while ((nc = getchar()) != EOF) {
 
     if (nc == ' ') {
       blanks++;
     }
-  } 
+
+    // if (nc == '\t') {
+    //   tabs++;
+    // }
+
+    // if (nc == '\n') {
+    //   newlines++;
+    // }
+
+  }
+
+  printf("blanks: %d", blanks);
+  return 0;
 
 }
