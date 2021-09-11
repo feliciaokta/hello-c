@@ -51,7 +51,10 @@ int main ()
 
   }
 
-  printf("blanks: %d", blanks);
-  return 0;
+  printf("blanks: %d", blanks); // percent d is to tell the compiler to print an integer
+
+  // input a series of text,
+  // when you're done typing all the text,
+  // press ctrl + d
 
 }
