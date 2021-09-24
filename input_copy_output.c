@@ -6,7 +6,6 @@
 int main ()
 {
   char input = getchar();
-  char output = putchar(input);
 
   // try to see if output works an exact copy first
 
@@ -14,4 +13,15 @@ int main ()
   // if character = blank && character length > 1
   // then output ' '
 
-}
+  int c; // this is the variable for each character
+
+  while ((c = input) != EOF) {
+    
+    if (c == '  ') {
+      // replace with only one space ' '
+    }
+
+    putchar(c);
+  }
+
+};
